@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Google Logo Change",
+    "version": "1.0",
+    "description": "Change Google Logo",
+    "icons": {
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png",
+        "256": "images/256.png"
+
+
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/"],
+        "js": ["content.js"]
+    }]
+
+
+}
