@@ -30,9 +30,10 @@ try {
 
 
 
+        if (document.getElementsByClassName("LLD4me")[0] != null) {
 
-
-        document.getElementsByClassName("LLD4me")[0].style = "height:500px";
+            document.getElementsByClassName("LLD4me")[0].style = "height:500px";
+        }
         if (document.getElementsByClassName("rSk4se")[0] != null) {
             document.getElementsByClassName("rSk4se")[0].style = "max-height:500px";
         }
@@ -55,7 +56,9 @@ try {
 
         document.getElementById("hplogo").style.height = "200px";
         document.getElementById("hplogo").src = url;
-        document.getElementById("SIvCob").style.display = "none";
+        if (document.getElementById("SIvCob") != null) {
+            document.getElementById("SIvCob").style.display = "none";
+        }
     }
 } catch (e) {
 
